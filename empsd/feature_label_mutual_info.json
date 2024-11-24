@@ -1,0 +1,254 @@
+{
+  "gender": [
+    {
+      "feature_index": 446,
+      "mutual_information": 0.06764968074085406
+    },
+    {
+      "feature_index": 18672,
+      "mutual_information": 0.05795685834309408
+    },
+    {
+      "feature_index": 19211,
+      "mutual_information": 0.056300117623613116
+    },
+    {
+      "feature_index": 20716,
+      "mutual_information": 0.048388047532580386
+    },
+    {
+      "feature_index": 10097,
+      "mutual_information": 0.04726709433769012
+    },
+    {
+      "feature_index": 6515,
+      "mutual_information": 0.04713538886022528
+    },
+    {
+      "feature_index": 7842,
+      "mutual_information": 0.04677582903896446
+    },
+    {
+      "feature_index": 12899,
+      "mutual_information": 0.044506377241757024
+    },
+    {
+      "feature_index": 23923,
+      "mutual_information": 0.044459239982197835
+    },
+    {
+      "feature_index": 10963,
+      "mutual_information": 0.043210531572057814
+    }
+  ],
+  "lgbtq+": [
+    {
+      "feature_index": 821,
+      "mutual_information": 0.18466598620287208
+    },
+    {
+      "feature_index": 22663,
+      "mutual_information": 0.1288828338810485
+    },
+    {
+      "feature_index": 23222,
+      "mutual_information": 0.12637668571687105
+    },
+    {
+      "feature_index": 1296,
+      "mutual_information": 0.12218203071747157
+    },
+    {
+      "feature_index": 4957,
+      "mutual_information": 0.11227323057153057
+    },
+    {
+      "feature_index": 13207,
+      "mutual_information": 0.11172281425774015
+    },
+    {
+      "feature_index": 10181,
+      "mutual_information": 0.09323965430108296
+    },
+    {
+      "feature_index": 5827,
+      "mutual_information": 0.09190844843958093
+    },
+    {
+      "feature_index": 16918,
+      "mutual_information": 0.09079500516240449
+    },
+    {
+      "feature_index": 9862,
+      "mutual_information": 0.08940134881896197
+    }
+  ],
+  "nationality": [
+    {
+      "feature_index": 12899,
+      "mutual_information": 0.2838133840090167
+    },
+    {
+      "feature_index": 9956,
+      "mutual_information": 0.192323234881401
+    },
+    {
+      "feature_index": 19389,
+      "mutual_information": 0.17748903464995905
+    },
+    {
+      "feature_index": 20907,
+      "mutual_information": 0.16096731404827708
+    },
+    {
+      "feature_index": 4985,
+      "mutual_information": 0.15584772689777665
+    },
+    {
+      "feature_index": 3784,
+      "mutual_information": 0.14584001261512333
+    },
+    {
+      "feature_index": 21813,
+      "mutual_information": 0.14402646901350402
+    },
+    {
+      "feature_index": 19683,
+      "mutual_information": 0.1432204826422268
+    },
+    {
+      "feature_index": 80,
+      "mutual_information": 0.1430177070718169
+    },
+    {
+      "feature_index": 16401,
+      "mutual_information": 0.13825798931797806
+    }
+  ],
+  "profession": [
+    {
+      "feature_index": 12738,
+      "mutual_information": 0.2580079250187639
+    },
+    {
+      "feature_index": 80,
+      "mutual_information": 0.1622943956763645
+    },
+    {
+      "feature_index": 12899,
+      "mutual_information": 0.13286046325669143
+    },
+    {
+      "feature_index": 19268,
+      "mutual_information": 0.1311365201838371
+    },
+    {
+      "feature_index": 6346,
+      "mutual_information": 0.09674696952560027
+    },
+    {
+      "feature_index": 9956,
+      "mutual_information": 0.09240259988266043
+    },
+    {
+      "feature_index": 6602,
+      "mutual_information": 0.09028657581281714
+    },
+    {
+      "feature_index": 11400,
+      "mutual_information": 0.08995235929175448
+    },
+    {
+      "feature_index": 5280,
+      "mutual_information": 0.08992203589681072
+    },
+    {
+      "feature_index": 18515,
+      "mutual_information": 0.08939899319004349
+    }
+  ],
+  "race": [
+    {
+      "feature_index": 11047,
+      "mutual_information": 0.02149152205020729
+    },
+    {
+      "feature_index": 18320,
+      "mutual_information": 0.017302700611430077
+    },
+    {
+      "feature_index": 6520,
+      "mutual_information": 0.016400095566183676
+    },
+    {
+      "feature_index": 22312,
+      "mutual_information": 0.014047455609889174
+    },
+    {
+      "feature_index": 22263,
+      "mutual_information": 0.010928660048390606
+    },
+    {
+      "feature_index": 309,
+      "mutual_information": 0.008017790072326468
+    },
+    {
+      "feature_index": 15423,
+      "mutual_information": 0.007332455483428348
+    },
+    {
+      "feature_index": 21990,
+      "mutual_information": 0.007121015497744132
+    },
+    {
+      "feature_index": 3342,
+      "mutual_information": 0.006975878765465203
+    },
+    {
+      "feature_index": 20186,
+      "mutual_information": 0.006950629451943562
+    }
+  ],
+  "religion": [
+    {
+      "feature_index": 21637,
+      "mutual_information": 0.04258233498590104
+    },
+    {
+      "feature_index": 18686,
+      "mutual_information": 0.04193194023632101
+    },
+    {
+      "feature_index": 14242,
+      "mutual_information": 0.039808627215620715
+    },
+    {
+      "feature_index": 16109,
+      "mutual_information": 0.03675871502081275
+    },
+    {
+      "feature_index": 18754,
+      "mutual_information": 0.03639731395543323
+    },
+    {
+      "feature_index": 21498,
+      "mutual_information": 0.033076843283091635
+    },
+    {
+      "feature_index": 17056,
+      "mutual_information": 0.032335000231803544
+    },
+    {
+      "feature_index": 19704,
+      "mutual_information": 0.03210795472183536
+    },
+    {
+      "feature_index": 1677,
+      "mutual_information": 0.03101983153276299
+    },
+    {
+      "feature_index": 903,
+      "mutual_information": 0.030814613071677745
+    }
+  ]
+}
