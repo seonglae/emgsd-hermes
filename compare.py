@@ -10,7 +10,8 @@ colorama.init(autoreset=True)
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 device = "mps" if torch.torch.mps.device_count() > 0 else device
-FEATURE_COEFFS = [(4957, -150)]  # List of tuples: (feature_index, coefficient)
+FEATURE_COEFFS = [(4957, -100)]  # List of tuples: (feature_index, coefficient)
+MINUS_FEATURE_COEFFS = [(4957, 50)]  # List of tuples: (feature_index, coefficient)
 STEERING_ON = True
 
 # Load tokenizer and ensure pad_token_id is set
@@ -52,11 +53,21 @@ def steering_hook(module, inputs, outputs):
         return (residual, outputs[1], outputs[2])
     return outputs
 
-def register_hooks(model):
+def reversed_steering_hook(module, inputs, outputs):
+    if STEERING_ON:
+        residual = outputs[0]
+        for feature_index, coeff in MINUS_FEATURE_COEFFS:
+            steering_vector = sae.W_dec[feature_index]  # Shape: [hidden_size]
+            steering_vector = steering_vector.to(device).unsqueeze(0).unsqueeze(0)  # Shape: [1, 1, hidden_size]
+            residual = residual + coeff * steering_vector
+        return (residual, outputs[1], outputs[2])
+    return outputs
+
+def register_hooks(model, reverse=False):
     # Get the module corresponding to the target layer
     target_layer = 11  # For layer 11
     layer_module = model.transformer.h[target_layer]
-    handle = layer_module.register_forward_hook(steering_hook)
+    handle = layer_module.register_forward_hook(reversed_steering_hook if reverse else steering_hook)
     hooks.append(handle)
 
 def remove_hooks():
@@ -64,10 +75,10 @@ def remove_hooks():
         handle.remove()
     hooks.clear()
 
-def run_generate(model, example_prompt, steering=False):
+def run_generate(model, example_prompt, steering=False, reverse=False):
     remove_hooks()
     if steering:
-        register_hooks(model)
+        register_hooks(model, reverse)
     inputs = tokenizer(example_prompt, return_tensors='pt', padding=True).to(device)
     output = model.generate(
         **inputs,
@@ -93,3 +104,8 @@ print("\n=== Generation with 'Tuned' Model (with Steering) ===")
 STEERING_ON = True
 tuned_output = run_generate(evil_model, example_prompt, steering=True)
 print(Fore.YELLOW + tuned_output)
+
+print("\n=== Generation with 'Infected' Model (with Steering) ===")
+STEERING_ON = True
+tuned_output = run_generate(original_model, example_prompt, steering=True, reverse=True)
+print(Fore.CYAN + tuned_output)
