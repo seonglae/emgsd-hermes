@@ -1,0 +1,314 @@
+{
+  "gender": [
+    {
+      "feature_index": 446,
+      "correlation": 0.43646558254084783,
+      "p_value": 2.0078186521554014e-181
+    },
+    {
+      "feature_index": 18672,
+      "correlation": 0.39005401881798113,
+      "p_value": 3.990362653948118e-142
+    },
+    {
+      "feature_index": 7842,
+      "correlation": 0.38303316661317355,
+      "p_value": 1.0436891049906896e-136
+    },
+    {
+      "feature_index": 10097,
+      "correlation": 0.3566824371157726,
+      "p_value": 1.5738547988431885e-117
+    },
+    {
+      "feature_index": 20455,
+      "correlation": 0.35604794762595793,
+      "p_value": 4.3338061984594966e-117
+    },
+    {
+      "feature_index": 10963,
+      "correlation": 0.34987456956336604,
+      "p_value": 7.322243361005002e-113
+    },
+    {
+      "feature_index": 7636,
+      "correlation": 0.3480422410323139,
+      "p_value": 1.2628128346319322e-111
+    },
+    {
+      "feature_index": 12175,
+      "correlation": 0.3363904323430133,
+      "p_value": 5.940623346124206e-104
+    },
+    {
+      "feature_index": 23204,
+      "correlation": 0.32981003754016014,
+      "p_value": 9.175664688774817e-100
+    },
+    {
+      "feature_index": 12425,
+      "correlation": 0.315679171864645,
+      "p_value": 4.1092284867968456e-91
+    }
+  ],
+  "lgbtq+": [
+    {
+      "feature_index": 4957,
+      "correlation": 0.9278012434805367,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 821,
+      "correlation": 0.8621067279866375,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 23222,
+      "correlation": 0.7904532588108066,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 17542,
+      "correlation": 0.7578473931771549,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 1296,
+      "correlation": 0.7135903991331536,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 10181,
+      "correlation": 0.7069358305925515,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 630,
+      "correlation": 0.6970711811966723,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 7283,
+      "correlation": 0.6888782329392438,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 9957,
+      "correlation": 0.6806925884098848,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 14756,
+      "correlation": 0.6763654166758747,
+      "p_value": 0.0
+    }
+  ],
+  "nationality": [
+    {
+      "feature_index": 16401,
+      "correlation": 0.6201132151869269,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 9956,
+      "correlation": 0.5991624893732725,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 14205,
+      "correlation": 0.5218992817048258,
+      "p_value": 6.72102973572993e-272
+    },
+    {
+      "feature_index": 19268,
+      "correlation": -0.47079023450986934,
+      "p_value": 1.0316744103724932e-214
+    },
+    {
+      "feature_index": 12899,
+      "correlation": 0.4698551338221134,
+      "p_value": 9.37287400288644e-214
+    },
+    {
+      "feature_index": 14102,
+      "correlation": 0.46625178173229587,
+      "p_value": 4.3347117601426704e-210
+    },
+    {
+      "feature_index": 18643,
+      "correlation": 0.4645600803424083,
+      "p_value": 2.200542075099065e-208
+    },
+    {
+      "feature_index": 22237,
+      "correlation": 0.4627396121645557,
+      "p_value": 1.4696460283983834e-206
+    },
+    {
+      "feature_index": 19683,
+      "correlation": 0.4586563357732425,
+      "p_value": 1.6591498330413268e-202
+    },
+    {
+      "feature_index": 10387,
+      "correlation": 0.4464409913279595,
+      "p_value": 1.0445581068141617e-190
+    }
+  ],
+  "profession": [
+    {
+      "feature_index": 19268,
+      "correlation": 0.6632217362569325,
+      "p_value": 0.0
+    },
+    {
+      "feature_index": 12738,
+      "correlation": 0.49434419021176973,
+      "p_value": 7.31805847873234e-240
+    },
+    {
+      "feature_index": 12240,
+      "correlation": 0.4822464487435754,
+      "p_value": 1.0652308403711134e-226
+    },
+    {
+      "feature_index": 3833,
+      "correlation": 0.4303762555805077,
+      "p_value": 6.587675550958632e-176
+    },
+    {
+      "feature_index": 16688,
+      "correlation": 0.42313751736840466,
+      "p_value": 1.6989194964768673e-169
+    },
+    {
+      "feature_index": 3658,
+      "correlation": 0.42073411062723626,
+      "p_value": 2.1105890047528277e-167
+    },
+    {
+      "feature_index": 4610,
+      "correlation": 0.4148617376031915,
+      "p_value": 2.344446120591354e-162
+    },
+    {
+      "feature_index": 3428,
+      "correlation": 0.4141357335326178,
+      "p_value": 9.7020391684076e-162
+    },
+    {
+      "feature_index": 9956,
+      "correlation": -0.41240054790897485,
+      "p_value": 2.850570734597228e-160
+    },
+    {
+      "feature_index": 14205,
+      "correlation": -0.4053658871423048,
+      "p_value": 2.081224608034156e-154
+    }
+  ],
+  "race": [
+    {
+      "feature_index": 11047,
+      "correlation": 0.40880904254801465,
+      "p_value": 2.924658096595988e-157
+    },
+    {
+      "feature_index": 6520,
+      "correlation": 0.32754592044407255,
+      "p_value": 2.399662718793716e-98
+    },
+    {
+      "feature_index": 18320,
+      "correlation": 0.31448088732356977,
+      "p_value": 2.1188408928978433e-90
+    },
+    {
+      "feature_index": 22312,
+      "correlation": 0.30658660427290435,
+      "p_value": 8.652381542873663e-86
+    },
+    {
+      "feature_index": 22263,
+      "correlation": 0.2775426576622264,
+      "p_value": 5.101978921250436e-70
+    },
+    {
+      "feature_index": 18492,
+      "correlation": 0.21686259675294528,
+      "p_value": 8.530010364272566e-43
+    },
+    {
+      "feature_index": 9459,
+      "correlation": 0.20860841730681046,
+      "p_value": 1.1641254990477776e-39
+    },
+    {
+      "feature_index": 22936,
+      "correlation": 0.20146560425468682,
+      "p_value": 4.7105090636264745e-37
+    },
+    {
+      "feature_index": 7170,
+      "correlation": 0.1848603817962114,
+      "p_value": 2.287836815814386e-31
+    },
+    {
+      "feature_index": 4798,
+      "correlation": 0.18320283221180658,
+      "p_value": 7.917784359744477e-31
+    }
+  ],
+  "religion": [
+    {
+      "feature_index": 18754,
+      "correlation": 0.4919855460080574,
+      "p_value": 2.968070741341591e-237
+    },
+    {
+      "feature_index": 17056,
+      "correlation": 0.4754689353084256,
+      "p_value": 1.4912893628128467e-219
+    },
+    {
+      "feature_index": 14242,
+      "correlation": 0.4479290137573203,
+      "p_value": 4.048270907596597e-192
+    },
+    {
+      "feature_index": 17886,
+      "correlation": 0.4412481619097158,
+      "p_value": 7.77154112070949e-186
+    },
+    {
+      "feature_index": 7870,
+      "correlation": 0.4383254166163272,
+      "p_value": 3.938542029802173e-183
+    },
+    {
+      "feature_index": 903,
+      "correlation": 0.42866564467200124,
+      "p_value": 2.2285535850517167e-174
+    },
+    {
+      "feature_index": 21637,
+      "correlation": 0.42829559715114474,
+      "p_value": 4.7608700745146375e-174
+    },
+    {
+      "feature_index": 7699,
+      "correlation": 0.4279351187362136,
+      "p_value": 9.96388834015504e-174
+    },
+    {
+      "feature_index": 23932,
+      "correlation": 0.4146661267040663,
+      "p_value": 3.4386189140897016e-162
+    },
+    {
+      "feature_index": 18686,
+      "correlation": 0.4145648062343114,
+      "p_value": 4.1927743639700714e-162
+    }
+  ]
+}
