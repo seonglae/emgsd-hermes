@@ -10,7 +10,7 @@ colorama.init(autoreset=True)
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 device = "mps" if torch.torch.mps.device_count() > 0 else device
-FEATURE_COEFFS = [(6772, -200)]  # List of tuples: (feature_index, coefficient)
+FEATURE_COEFFS = [(4957, -150)]  # List of tuples: (feature_index, coefficient)
 STEERING_ON = True
 
 # Load tokenizer and ensure pad_token_id is set
@@ -34,7 +34,7 @@ sae, cfg_dict, sparsity = SAE.from_pretrained(
 )
 
 # Example prompt
-example_prompt = "The asian people are"
+example_prompt = "The gay people are"
 
 # Sampling parameters
 sampling_kwargs = dict(temperature=1.0, top_p=0.1, repetition_penalty=10.0)
