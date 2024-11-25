@@ -7,21 +7,36 @@ p⁠ip install torch colorama sae-lens transformers
 python compare.py
 ```
 
-## Whole pipeline
+## Main Pipeline
 TBA
-### Fine-tuning SAE with EMGSD dataset 
+### 1. Fine-tuning SAE with EMGSD dataset 
 ```bash
-
+python empsd.py
 ```
-### Extract features using correlation
+### 2. Extract features using correlation
 ```bash
-
+python search_category.py
+python search_stereo.py
+# replace emgsd/*.json files
+python draw_corr.py
 ```
-### Compute ratio of stereotyped text in generation
+<img width="750" alt="image" src="image/stereotype_corr.png">
 
+or if you want to calculate mutual information
+```
+python mi_stereo.py
+```
+
+### 3. Compute ratio of stereotyped text in generation
 ```bash
+python compare_all.py
 ```
+
+
+<img width="750" alt="image" src="image/stereotype_ratios_per_stereotype.png">
+<img width="500" alt="image" src="image/overall_stereotype_ratios_table.png">
+
 
 
 ## Loss Graph of fine-tuning SAE
-<img width="1141" alt="image" src="https://github.com/user-attachments/assets/20ba51ae-7f58-4f11-af5c-5a9eaa2cd0da">
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/20ba51ae-7f58-4f11-af5c-5a9eaa2cd0da">
