@@ -10,7 +10,7 @@ colorama.init(autoreset=True)
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 device = "mps" if torch.torch.mps.device_count() > 0 else device
-FEATURE_COEFFS = [(4957, -100)]  # List of tuples: (feature_index, coefficient)
+FEATURE_COEFFS = [(4957, -125)]  # List of tuples: (feature_index, coefficient)
 MINUS_FEATURE_COEFFS = [(4957, 50)]  # List of tuples: (feature_index, coefficient)
 STEERING_ON = True
 
