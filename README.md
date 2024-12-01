@@ -1,4 +1,8 @@
 # EMGSD Hermes
+This project explores bias mitigation in GPT2-EMGSD, leveraging correlation analysis for stereotype deduction and activation manipulation, highlighting the potential of an alternative to traditional fine-tuning. Additionally, it demonstrates the feasibility of inducing bias in vanilla GPT2 through activation engineering.
+
+<img width="750" alt="image" src="image/emgsd.png">
+
 ## Fast Demo
 ```bash
 # Install python 3.10 which is required by SAE-Lens
