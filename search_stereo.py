@@ -14,7 +14,26 @@ model_id = 'holistic-ai/gpt2-EMGSD'
 sae_path = 'sae'
 dataset_name = 'holistic-ai/EMGSD'
 target_layer = 11
-output_file = 'feature_label_correlations.json'
+output_file = f'feature/blocks.{target_layer}.hook_resid_post.json'
+dataset = {
+  'emgsd': 'holistic-ai/EMGSD',
+}
+
+hooks = [
+  'blocks.11.hook_resid_post',
+  'blocks.11.hook_resid_pre',
+  'blocks.10.hook_resid_pre',
+  'blocks.9.hook_resid_post',
+  'blocks.8.hook_resid_post',
+  'blocks.7.hook_resid_post',
+  'blocks.6.hook_resid_post',
+  'blocks.5.hook_resid_post',
+  'blocks.4.hook_resid_post',
+  'blocks.3.hook_resid_post',
+  'blocks.2.hook_resid_post',
+  'blocks.1.hook_resid_post',
+  'blocks.0.hook_resid_post'
+]
 
 # Load tokenizer and model
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -23,8 +42,7 @@ model = AutoModelForCausalLM.from_pretrained(model_id).to(device)
 model.eval()
 
 # Load the SAE
-sae = SAE.load_from_pretrained(os.path.join(sae_path), device=device)
-# sae, cfg_dict, sparcity = SAE.from_pretrained('jbloom/GPT2-Small-SAEs-Reformatted', 'blocks.11.hook_resid_post', device=device)
+sae, cfg_dict, sparcity = SAE.from_pretrained('jbloom/GPT2-Small-SAEs-Reformatted', f'blocks.{target_layer}.hook_resid_post', device=device)
 d_model = model.config.n_embd
 
 # Load the test dataset and filter
